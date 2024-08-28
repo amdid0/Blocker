@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 관리</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            display: block; /*block*/
+        }
+        li span {
+            display: block;
+            margin-bottom: 8px;
+        }
+        li button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        li button:hover {
+            background-color: #c0392b;
+        }
+        .sizecontrol {
+            width: 200px;
+            height: 200px;
+            overflow: auto; /*overflow*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="sizecontrol">
+        <h1>사이트 링크 관리</h1>
+        <input type="text" id="linkInput" placeholder="사이트 링크 입력">
+        <button id="addLinkButton">링크 추가</button>
+        <ul id="linkList"></ul>
+        <h6>만든 사람:amdid0</h6>
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+</html>
